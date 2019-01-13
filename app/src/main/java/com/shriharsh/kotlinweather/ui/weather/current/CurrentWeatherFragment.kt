@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.resocoder.forecastmvvm.internal.glide.GlideApp
 import com.shriharsh.kotlinweather.R
 import com.shriharsh.kotlinweather.ui.base.ScopedFragment
 import kotlinx.android.synthetic.main.current_weather_fragment.*

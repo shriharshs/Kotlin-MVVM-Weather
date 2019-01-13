@@ -3,6 +3,7 @@ package com.shriharsh.kotlinweather.data
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.shriharsh.kotlinweather.data.network.ConnectivityInterceptor
 import com.shriharsh.kotlinweather.data.network.response.CurrentWeatherResponse
+import com.shriharsh.kotlinweather.data.network.response.FutureWeatherResponse
 import kotlinx.coroutines.Deferred
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -28,6 +29,13 @@ interface ApixuWeatherApiService {
         @Query("lang") language: String = "en"
     ): Deferred<CurrentWeatherResponse>
 
+    // https://api.apixu.com/v1/forecast.json?key=205c24be6920493a8b2151939181611&q=Los%20Angeles&days=1
+    @GET("forecast.json")
+    fun getFutureWeather(
+        @Query("q") location: String,
+        @Query("days") days: Int,
+        @Query("lang") languageCode: String = "en"
+    ): Deferred<FutureWeatherResponse>
 
     companion object {
         operator fun invoke(

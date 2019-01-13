@@ -1,4 +1,4 @@
-package com.shriharsh.kotlinweather.data.db.unitlocalized
+package com.shriharsh.kotlinweather.data.db.unitlocalized.current
 
 /**
  * Created on 16/12/18.

@@ -1,4 +1,4 @@
-package com.shriharsh.kotlinweather.data.db.unitlocalized
+package com.shriharsh.kotlinweather.data.db.unitlocalized.current
 
 import androidx.room.ColumnInfo
 

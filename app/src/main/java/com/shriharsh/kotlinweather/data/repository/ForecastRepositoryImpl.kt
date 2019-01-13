@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import com.shriharsh.kotlinweather.data.db.dao.CurrentWeatherDao
 import com.shriharsh.kotlinweather.data.db.dao.WeatherLocationDao
 import com.shriharsh.kotlinweather.data.db.entity.WeatherLocation
-import com.shriharsh.kotlinweather.data.db.unitlocalized.UnitSpecificCurrentWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.current.UnitSpecificCurrentWeatherEntry
 import com.shriharsh.kotlinweather.data.network.WeatherNetworkDataSource
 import com.shriharsh.kotlinweather.data.network.response.CurrentWeatherResponse
 import com.shriharsh.kotlinweather.data.provider.LocationProvider

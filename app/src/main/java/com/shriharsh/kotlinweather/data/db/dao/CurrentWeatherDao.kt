@@ -7,8 +7,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.shriharsh.kotlinweather.data.db.entity.CURRENT_WEATHER_ID
 import com.shriharsh.kotlinweather.data.db.entity.CurrentWeather
-import com.shriharsh.kotlinweather.data.db.unitlocalized.ImperialCurrentWeatherEntry
-import com.shriharsh.kotlinweather.data.db.unitlocalized.MetricCurrentWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.current.ImperialCurrentWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.current.MetricCurrentWeatherEntry
 
 /**
  * Created on 16/12/18.

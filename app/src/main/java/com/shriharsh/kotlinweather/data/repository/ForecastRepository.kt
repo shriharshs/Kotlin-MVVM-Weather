@@ -2,7 +2,7 @@ package com.shriharsh.kotlinweather.data.repository
 
 import androidx.lifecycle.LiveData
 import com.shriharsh.kotlinweather.data.db.entity.WeatherLocation
-import com.shriharsh.kotlinweather.data.db.unitlocalized.UnitSpecificCurrentWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.current.UnitSpecificCurrentWeatherEntry
 
 /**
  * Created on 16/12/18.

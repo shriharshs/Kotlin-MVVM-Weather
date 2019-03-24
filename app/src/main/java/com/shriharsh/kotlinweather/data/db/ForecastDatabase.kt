@@ -6,8 +6,10 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.shriharsh.kotlinweather.data.db.dao.CurrentWeatherDao
+import com.shriharsh.kotlinweather.data.db.dao.FutureWeatherDao
 import com.shriharsh.kotlinweather.data.db.dao.WeatherLocationDao
 import com.shriharsh.kotlinweather.data.db.entity.CurrentWeather
+import com.shriharsh.kotlinweather.data.db.entity.FutureWeatherEntry
 import com.shriharsh.kotlinweather.data.db.entity.WeatherLocation
 
 /**
@@ -17,7 +19,7 @@ import com.shriharsh.kotlinweather.data.db.entity.WeatherLocation
 
 
 @Database(
-    entities = [CurrentWeather::class, WeatherLocation::class],
+    entities = [CurrentWeather::class, FutureWeatherEntry::class, WeatherLocation::class],
     version = 1
 )
 @TypeConverters(LocalDateConverter::class)

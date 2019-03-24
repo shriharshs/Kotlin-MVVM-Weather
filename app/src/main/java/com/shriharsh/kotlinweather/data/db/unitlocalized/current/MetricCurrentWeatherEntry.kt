@@ -2,7 +2,6 @@ package com.shriharsh.kotlinweather.data.db.unitlocalized.current
 
 import androidx.room.ColumnInfo
 
-
 data class MetricCurrentWeatherEntry(
     @ColumnInfo(name = "tempC")
     override val temperature: Double,
@@ -19,5 +18,6 @@ data class MetricCurrentWeatherEntry(
     @ColumnInfo(name = "feelslikeC")
     override val feelsLikeTemperature: Double,
     @ColumnInfo(name = "visKm")
+
     override val visibilityDistance: Double
 ) : UnitSpecificCurrentWeatherEntry

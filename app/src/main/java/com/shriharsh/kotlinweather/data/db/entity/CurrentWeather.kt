@@ -15,7 +15,6 @@ data class CurrentWeather(
     val tempF: Double,
     @SerializedName("is_day")
     val isDay: Int,
-
     @Embedded(prefix = "condition_")
     val condition: Condition,
     @SerializedName("wind_mph")

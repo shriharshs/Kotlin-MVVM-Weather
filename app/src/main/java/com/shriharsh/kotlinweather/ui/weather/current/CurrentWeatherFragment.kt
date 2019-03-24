@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.shriharsh.kotlinweather.R
+import com.shriharsh.kotlinweather.internal.glide.GlideApp
 import com.shriharsh.kotlinweather.ui.base.ScopedFragment
 import kotlinx.android.synthetic.main.current_weather_fragment.*
 import kotlinx.coroutines.launch
@@ -68,7 +69,7 @@ class CurrentWeatherFragment : ScopedFragment(), KodeinAware {
     }
 
     private fun chooseLocalizedUnitAbbreviation(metric: String, imperial: String): String {
-        return if (viewModel.isMetric) metric else imperial
+        return if (viewModel.isMetricUnit) metric else imperial
     }
 
     private fun updateLocation(location: String) {

@@ -18,14 +18,13 @@ import com.shriharsh.kotlinweather.data.provider.UnitProviderImpl
 import com.shriharsh.kotlinweather.data.repository.ForecastRepository
 import com.shriharsh.kotlinweather.data.repository.ForecastRepositoryImpl
 import com.shriharsh.kotlinweather.ui.weather.current.CurrentWeatherViewModelFactory
+import com.shriharsh.kotlinweather.ui.weather.future.detail.FutureDetailWeatherViewModelFactory
 import com.shriharsh.kotlinweather.ui.weather.future.list.FutureListWeatherViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
-import org.kodein.di.generic.bind
-import org.kodein.di.generic.instance
-import org.kodein.di.generic.provider
-import org.kodein.di.generic.singleton
+import org.kodein.di.generic.*
+import org.threeten.bp.LocalDate
 
 /**
  * Created on 17/12/18.
@@ -57,6 +56,8 @@ class MyWeatherApplication : Application(), KodeinAware {
         bind<UnitProvider>() with singleton { UnitProviderImpl(instance()) }
         bind() from provider { CurrentWeatherViewModelFactory(instance(), instance()) }
         bind() from provider { FutureListWeatherViewModelFactory(instance(), instance()) }
+        bind() from factory { detailDate: LocalDate -> FutureDetailWeatherViewModelFactory(detailDate, instance(), instance()) }
+
     }
 
     override fun onCreate() {

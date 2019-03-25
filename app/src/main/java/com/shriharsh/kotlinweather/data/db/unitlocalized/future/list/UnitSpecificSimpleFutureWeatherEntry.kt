@@ -1,4 +1,4 @@
-package com.shriharsh.kotlinweather.data.db.unitlocalized.future
+package com.shriharsh.kotlinweather.data.db.unitlocalized.future.list
 
 import org.threeten.bp.LocalDate
 

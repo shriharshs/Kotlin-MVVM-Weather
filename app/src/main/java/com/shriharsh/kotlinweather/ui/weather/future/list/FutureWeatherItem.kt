@@ -1,8 +1,8 @@
 package com.shriharsh.kotlinweather.ui.weather.future.list
 
 import com.shriharsh.kotlinweather.R
-import com.shriharsh.kotlinweather.data.db.unitlocalized.future.MetricSimpleFutureWeatherEntry
-import com.shriharsh.kotlinweather.data.db.unitlocalized.future.UnitSpecificSimpleFutureWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.future.list.MetricSimpleFutureWeatherEntry
+import com.shriharsh.kotlinweather.data.db.unitlocalized.future.list.UnitSpecificSimpleFutureWeatherEntry
 import com.shriharsh.kotlinweather.internal.glide.GlideApp
 import com.xwray.groupie.kotlinandroidextensions.Item
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
